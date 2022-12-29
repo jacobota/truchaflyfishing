@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Mouse+Memoirs&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Book a Trip</title>
 </head>
 <body class='img-fluid'>
@@ -37,6 +38,12 @@
               <li class="nav-item">
                 <a href="contact.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Contact</a>
               </li>
+              <li class="nav-item" id="ownersignin">
+                <a href="ownersignin.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Sign-in</a>
+              </li>
+              <li class="nav-item" id="ownernav-item">
+                <a href="ownerpage.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Owner</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -51,6 +58,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 class="text-center" id='textHeading'>Overview of the Trip</h1>
                         <h2 class='text-left' id='text'>
                         I am Licensed, Bonded, and Insured. My mission is for anglers to have fun, experience 
@@ -87,6 +95,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>2022 Guide Service Rates</h1>
                         <div class='container'>
                           <div class='row'>
@@ -120,6 +129,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>Payment Methods</h1>
                         <h2 class='text-left' id='text'>
                         To secure your reservation and ink in your guide trip a 50% deposit is required. 
@@ -149,6 +159,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>Cancellation Policy</h1>
                         <h2 class='text-left mt-4' id='text'>
                         ● In the event of your cancellation your deposit is fully refundable 14 days or more from the scheduled trip date.
@@ -184,6 +195,8 @@
             <h1 id='footerTextCopy'>&copy; Trucha Fly Fishing Guide Service</h1>
         </div>
     </footer>
+
+    <script src="../js/verifyUser.js" type="module"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

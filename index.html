@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Mouse+Memoirs&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Trucha Home</title>
 </head>
 <body class='img-fluid'>
@@ -37,6 +38,12 @@
               <li class="nav-item">
                 <a href="./pages/contact.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Contact</a>
               </li>
+              <li class="nav-item" id="ownersignin">
+                <a href="./pages/ownersignin.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Sign-in</a>
+              </li>
+              <li class="nav-item" id="ownernav-item">
+                <a href="./pages/ownerpage.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Owner</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -49,6 +56,7 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container'>
+                            <a class="hideMe"><i class="fa fa-pencil"></i></a>
                             <h1 id='textHeading'>The "Trucha Fly Fishing" Motto</h1>
                             <h2 class='text-middle mt-4 fw-bold' id='text'>
                                ALWAYS KEEPIN' IT REEL!
@@ -64,6 +72,7 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container'>
+                            <a class="hideMe"><i class="fa fa-pencil"></i></a>
                             <h1 id='textHeading'>The Trucha Narrative</h1>
                             <h2 class='d-flex justify-content-start mt-4' id='text'>WELCOME,</h2>
                             <h2 style="text-indent: 40px;" class="text-left" id='text'>
@@ -92,6 +101,7 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container'>
+                            <a class="hideMe"><i class="fa fa-pencil"></i></a>
                             <h1 id='textHeading'>About Your Guide</h1>
                             <h2 class='text-left' id='text'>
                                 ● Fishing Guide David Carranza, has 
@@ -123,6 +133,7 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container'>
+                            <a class="hideMe"><i class="fa fa-pencil"></i></a>
                             <h1 id='textHeading'>Book Now</h1>
                             <h2 class='text-middle mt-4' id='text'>
                                 LET'S CAPTURE SOME KODAK MOMENTS! 
@@ -134,7 +145,7 @@
                                 button below to book a trip.
                             </h2>
                             <div id='inbetweenbreak'></div>
-                            <a href='./pages/bookatrip.html'><Button class='mt-5' id='bookButton' style="color: white;">Book A Trip</Button></a>
+                            <a href='./pages/bookatrip.html'><button class='bookButton' style="color: white;">Book A Trip</button></a>
                         </div>
                     </div>
                 </div>
@@ -146,6 +157,7 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container'>
+                            <a class="hideMe"><i class="fa fa-pencil"></i></a>
                             <h1 id='textHeading'>More Information</h1>
                             <h2 class='text-middle mt-4' id='text'>
                             Please feel free to contact me for weather forecasts, 
@@ -153,9 +165,9 @@
                             </h2>
                             <div id='inbetweenbreak'></div>
                             <div class="row">
-                                <div class="col-sm"><a href='./pages/lodging.html'><Button class='mt-5' id='bookButton' style="color: white;">Lodging</Button></a></div>
-                                <div class="col-sm"><a href='./pages/fishingreport.html'><Button class='mt-5' id='bookButton' style="color: white;">Fishing Reports</Button></a></div>
-                                <div class="col-sm"><a href='./pages/contact.html'><Button class='mt-5' id='bookButton' style="color: white;">Contact</Button></a></div>
+                                <div class="col-sm"><a href='./pages/lodging.html'><button class='bookButton' style="color: white;">Lodging</button></a></div>
+                                <div class="col-sm"><a href='./pages/fishingreport.html'><button class='bookButton' style="color: white;">Fishing Reports</button></a></div>
+                                <div class="col-sm"><a href='./pages/contact.html'><button class='bookButton' style="color: white;">Contact</button></a></div>
                             </div>
                         </div>
                     </div>
@@ -168,6 +180,7 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container'>
+                            <a class="hideMe"><i class="fa fa-pencil"></i></a>
                             <h1 id='textHeading'>Warning</h1>
                             <h2 class='text-middle mt-4' id='text'>
                                 Fishing Crowley Lake can become an addiction!
@@ -196,6 +209,8 @@
             <h1 id='footerTextCopy'>&copy; Trucha Fly Fishing Guide Service</h1>
         </div>
     </footer>
+
+    <script src="./js/verifyUser.js" type="module"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

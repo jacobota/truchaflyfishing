@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Mouse+Memoirs&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lodging</title>
 </head>
 <body class='img-fluid'>
@@ -37,6 +38,12 @@
               <li class="nav-item">
                 <a href="contact.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Contact</a>
               </li>
+              <li class="nav-item" id="ownersignin">
+                <a href="ownersignin.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Sign-in</a>
+              </li>
+              <li class="nav-item" id="ownernav-item">
+                <a href="ownerpage.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Owner</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -51,6 +58,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>Planning Your Trip</h1>
                         <h2 class='text-left' id='text'>
                         Trucha Fly Fishing Guide Service (TFFGS) has experienced many 
@@ -70,6 +78,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>Mono County Lodging Website</h1>
                         <h2 class='text-left mt-4' id='text'>
                         ● Mono County has lodging options to suit your every need.
@@ -85,7 +94,7 @@
                         <h2 class='text-left mt-4' id='text'>
                         ● Click below for more information:
                         </h2>
-                        <a href='http://www.monocounty.org/lodging/'><Button style="font-size: 30px; color: white;" class='mt-5' id='bookButton'>Mono County Lodging</Button></a>
+                        <a href='http://www.monocounty.org/lodging/'><button style="font-size: 30px; color: white;" class='bookButton'>Mono County Lodging</button></a>
                       </div>
                   </div>
               </div>
@@ -97,6 +106,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>Crowley Lake Fish Camp</h1>
                         <h2 class='text-left mt-4' id='text'>
                         ● There are 3 cabins located on the camp which are just awesome for yourself, family, and/or friends.
@@ -114,7 +124,7 @@
                         <h2 class='text-left mt-4' id='text'>
                         ● Click below for more information:
                         </h2>
-                        <a href='https://www.crowleylakefishcamp.com/'><Button style="font-size: 30px; color: white;" class='mt-5' id='bookButton'>Crowley Lake Fish Camp</Button></a>
+                        <a href='https://www.crowleylakefishcamp.com/'><button style="font-size: 30px; color: white;" class='bookButton'>Crowley Lake Fish Camp</button></a>
                       </div>
                   </div>
               </div>
@@ -126,6 +136,7 @@
               <div class="col">
                   <div class="p-3" id='grid-container'>
                       <div id='text-container'>
+                        <a class="hideMe"><i class="fa fa-pencil"></i></a>
                         <h1 id='textHeading'>McGee Creek RV Park</h1>
                         <h2 class='text-left mt-4' id='text'>
                         ● McGee Creek flows from the mountain peaks down the middle of this camping facility and is 
@@ -147,7 +158,7 @@
                         <h2 class='text-left mt-4' id='text'>
                         ● Click below for more information:
                         </h2>
-                        <a href='https://mcgeecreekrv-campground.com/'><Button style="font-size: 30px; color: white;" class='mt-5' id='bookButton'>McGee Creek RV Park</Button></a>
+                        <a href='https://mcgeecreekrv-campground.com/'><button style="font-size: 30px; color: white;" class='bookButton'>McGee Creek RV Park</button></a>
                       </div>
                   </div>
               </div>
@@ -168,6 +179,8 @@
             <h1 id='footerTextCopy'>&copy; Trucha Fly Fishing Guide Service</h1>
         </div>
     </footer>
+
+    <script src="../js/verifyUser.js" type="module"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -221,13 +221,14 @@ body {
     }
 }
 
-#bookButton {
+.bookButton {
+    margin-top: 20px;
     background-color: rgb(11, 11, 77);
     font-family: 'Mouse Memoirs', sans-serif;
 }
 
 @media screen and (min-width:601px) {
-    #bookButton {
+    .bookButton {
         height: 100px;
         width: 250px;
         font-size: 45px;
@@ -235,9 +236,24 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    #bookButton {
+    .bookButton {
         height: 50px;
         width: 125px;
         font-size: 18px;
     }
+}
+
+.hideMe {
+    color: rgb(11, 11, 77);
+    font-size: 30px;
+    text-align: right;
+    display: none;
+}
+
+#ownersignin {
+    display: block;
+}
+
+#ownernav-item {
+    display: none;
 }
