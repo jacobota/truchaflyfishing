@@ -257,3 +257,22 @@ body {
 #ownernav-item {
     display: none;
 }
+
+#slideshowimage {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: ease-in-out 1s;
+}
+
+@media screen and (min-width:601px) {
+    #slideshowimage {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #slideshowimage {
+        height: 250px;
+    }
+}
