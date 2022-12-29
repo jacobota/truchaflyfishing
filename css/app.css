@@ -1,0 +1,243 @@
+body {
+    background-image: url("../images/Pic3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+@media screen and (min-width:601px) {
+    #logo {
+        height: 125px;
+        width: 275px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #logo {
+        height: 75px;
+        width: 200px;
+    }
+}
+
+#navBackground {
+   background-image: url('../images/woodBackground.jpg');
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(163, 22, 22)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+#navItems {
+    color: rgb(163, 22, 22) !important;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+#navItems:hover {
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    color: rgb(163, 22, 22);
+}
+
+#header {
+    color: rgb(163, 22, 22) !important;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 4rem;
+    border-bottom: 8px solid rgb(163, 22, 22);
+}
+
+#textHeading {
+    color: rgb(163, 22, 22) !important;
+    font-family: 'Lobster', cursive;
+    border-bottom: 4px solid rgb(163, 22, 22);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width:601px) {
+    #textHeading {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #textHeading {
+        font-size: 30px;
+    }
+}
+
+#text {
+    line-height: 60px;
+    color: rgb(11, 11, 77) !important;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+@media screen and (min-width:601px) {
+    #text {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #text {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+#insta {
+    color: rgb(11, 11, 77) !important;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+@media screen and (min-width:601px) {
+    #insta {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #insta {
+        font-size: 18px;
+    }
+}
+
+#insta:hover {
+    color: rgb(163, 22, 22) !important;
+}
+
+#textHeading>h1 {
+    background-color: white;
+    padding: 10px;
+    color: rgb(163, 22, 22) !important;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width:601px) {
+    #break {
+        height:150px;
+    }
+}
+
+#footerText {
+    color: rgb(163, 22, 22) !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 1.75rem;
+}
+
+@media screen and (min-width:650px) {
+    #footerText {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:649px) {
+    #footerText {
+        margin: 10px;
+    }
+}
+
+#footerTextCopy {
+    color: rgb(163, 22, 22) !important;
+    font-weight: bold;
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 2.0rem;
+}
+
+#containerfooter>#footerText:hover {
+    cursor: pointer;
+}
+
+#containerfooter {
+    border-bottom: 3px solid rgb(163, 22, 22);
+}
+
+#foot {
+    background-image: url('../images/woodBackground.jpg');
+}
+
+@media screen and (max-width:600px) {
+    #break {
+        height: 90px;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #smallbreak {
+        height:100px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #smallbreak {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #inbetweenbreak {
+        height:25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #inbetweenbreak {
+        height: 5px;
+    }
+}
+
+#grid-container {
+    background-image: url('../images/woodBorder.jpg');
+    border-radius: 10px;
+    opacity: .9;
+}
+
+#text-container {
+    background-color: rgb(246, 252, 167);
+    border-radius: 10px;
+}
+
+@media screen and (min-width:601px) {
+    #text-container {
+        padding: 50px;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #text-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+#bookButton {
+    background-color: rgb(11, 11, 77);
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+@media screen and (min-width:601px) {
+    #bookButton {
+        height: 100px;
+        width: 250px;
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #bookButton {
+        height: 50px;
+        width: 125px;
+        font-size: 18px;
+    }
+}
