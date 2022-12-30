@@ -1,12 +1,19 @@
-let isSignedIn = 0;
-
-let userName = "jo";
-let pwd = "123";
-
 var displayer = document.getElementById("displayErr");
 var btnsign = document.getElementById("btnsignin");
-console.log(btnsign);
+
+localStorage.setItem('enabled', '0');
+localStorage.setItem('username', 'jo');
+
+if(localStorage.getItem('changepw') == null || localStorage.getItem('changedpw') == 'false') {
+    localStorage.setItem('changepw', 'false')
+}
+
 btnsign.addEventListener("click", () => {
+    if(localStorage.getItem('changepw') == 'false') {
+        console.log("here")
+        localStorage.setItem('password', '123')
+    }
+
     var userInput = document.getElementById("userInput").value;
     var pwInput = document.getElementById("pwInput").value;
 
@@ -17,25 +24,14 @@ btnsign.addEventListener("click", () => {
     } else if(pwInput == "") {
         displayer.innerHTML = "Please input a password"
     }
-    if(userInput != userName && pwInput != pwd) {
+    if(userInput != localStorage.getItem('username') && pwInput != localStorage.getItem('password')) {
         displayer.innerHTML = "Username and password are incorrect"
-    } else if(userInput != userName) {
+    } else if(userInput != localStorage.getItem('username')) {
         displayer.innerHTML = "Username incorrect"
-    } else if(pwInput != pwd) {
+    } else if(pwInput != localStorage.getItem('password')) {
         displayer.innerHTML = "Password incorrect"
     } else {
-        console.log("gothere");
-        //allow owner to see edit symbols
-        var iTag = document.getElementsByClassName("hideMe");
-        for(var i = 0; i < iTag.length; i++) {
-            iTag[i].style.display = "block";
-        }
-        //hide owner signin with owner page if owner is logged in
-        var ownersignin = document.getElementById("ownersignin");
-        ownersignin.style.display = "none";
-
-        var ownerPage = document.getElementById("ownernav-item");
-        ownerPage.style.display = "block";
-        location.href = "../pages/ownerpage.html"
+        localStorage.setItem("enabled", "1");
+        location.href = "../pages/ownerpage.html";
     }
 })
