@@ -1,19 +1,12 @@
 var displayer = document.getElementById("displayErr");
 var btnsign = document.getElementById("btnsignin");
 
-localStorage.setItem('enabled', '0');
-localStorage.setItem('username', 'jo');
-
-if(localStorage.getItem('changepw') == null || localStorage.getItem('changedpw') == 'false') {
-    localStorage.setItem('changepw', 'false')
+var Owner = {
+    userName : "guy",
+    password : "guy"
 }
 
 btnsign.addEventListener("click", () => {
-    if(localStorage.getItem('changepw') == 'false') {
-        console.log("here")
-        localStorage.setItem('password', '123')
-    }
-
     var userInput = document.getElementById("userInput").value;
     var pwInput = document.getElementById("pwInput").value;
 
@@ -24,14 +17,17 @@ btnsign.addEventListener("click", () => {
     } else if(pwInput == "") {
         displayer.innerHTML = "Please input a password"
     }
-    if(userInput != localStorage.getItem('username') && pwInput != localStorage.getItem('password')) {
+    //retrieve username and password and compare
+    if(userInput != Owner.userName && pwInput != Owner.password) {
         displayer.innerHTML = "Username and password are incorrect"
-    } else if(userInput != localStorage.getItem('username')) {
+    } else if(userInput != Owner.userName) {
         displayer.innerHTML = "Username incorrect"
-    } else if(pwInput != localStorage.getItem('password')) {
+    } else if(pwInput != Owner.password) {
         displayer.innerHTML = "Password incorrect"
     } else {
-        localStorage.setItem("enabled", "1");
+        sessionStorage.setItem("enable", "1");
         location.href = "../pages/ownerpage.html";
     }
 })
+
+console.log(sessionStorage.getItem("enable"))

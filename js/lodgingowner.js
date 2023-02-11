@@ -1,11 +1,4 @@
-var isEnabled = localStorage.getItem("enabled");
-
-if(isEnabled == '1') {
-    //unveil all pen markers
-    // var iTag = document.getElementsByClassName("hideMe");
-    // for(let i = 0; i < iTag.length; i++) {
-    //     iTag[i].style.display = "block";
-    // }
+if(sessionStorage.getItem("enable") == "1") {
     //show owner page instead of signin
     var ownersignin = document.getElementById("ownersignin");
     ownersignin.style.display = "none"

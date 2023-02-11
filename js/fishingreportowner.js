@@ -1,6 +1,4 @@
-var isEnabled = localStorage.getItem("enabled");
-
-if(isEnabled == '1') {
+if(sessionStorage.getItem("enable") == "1") {
     //show owner page instead of signin
     var ownersignin = document.getElementById("ownersignin");
     ownersignin.style.display = "none"
