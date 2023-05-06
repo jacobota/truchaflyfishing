@@ -1,9 +1,9 @@
 const slides = [
-    './images/Pic1.png',
-    './images/Pic2.jpg',
-    './images/Pic4.jpg',
-    './images/Pic5.jpg',
-    './images/Pic6.jpg'
+    '../images/Pic1.png',
+    '../images/Pic2.jpg',
+    '../images/Pic4.jpg',
+    '../images/Pic5.jpg',
+    '../images/Pic6.jpg'
 ]
 
 let slideholder = document.getElementById("slideshowimage");

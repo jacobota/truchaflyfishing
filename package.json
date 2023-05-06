@@ -2,15 +2,18 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express.js": "^1.0.0",
     "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
     "xml-writer": "^1.7.0"
   },
   "name": "truchaflyfishing",
   "description": "This website was created by Jacob Ota and utilizes HTML, CSS and Javascript to create a website for trucha fly fishing.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",

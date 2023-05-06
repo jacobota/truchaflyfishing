@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"  href="./css/app.css" /> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href="../css/app.css" /> 
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Mouse+Memoirs&display=swap"
       rel="stylesheet"
@@ -16,7 +16,7 @@
 <body class='img-fluid'>
     <nav class="navbar navbar-expand-xl navbar-light bg-light" id="navBackground">
         <a class="navbar-brand" href="index.html">
-            <img src="images/truchalogo.png" alt='' class="img-fluid mt-3 mb-3" id='logo'/>
+            <img src="../images/truchalogo.png" alt='' class="img-fluid mt-3 mb-3" id='logo'/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,23 +27,23 @@
               <a href="index.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Home</a>
             </li>
             <li class="nav-item">
-              <a href="./pages/bookatrip.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Book a Trip</a>
+              <a href="bookatrip.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Book a Trip</a>
             </li>
             <li class="nav-item">
-              <a href="./pages/lodging.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Lodging Info</a>
+              <a href="lodging.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Lodging Info</a>
             </li>
             <li class="nav-item">
-                <a href="./pages/fishingreport.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Fishing Reports</a>
-              </li>
-              <li class="nav-item">
-                <a href="./pages/contact.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Contact</a>
-              </li>
-              <li class="nav-item" id="ownersignin">
-                <a href="./pages/ownersignin.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Sign-in</a>
-              </li>
-              <li class="nav-item" id="ownernav-item">
-                <a href="./pages/ownerpage.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Owner</a>
-              </li>
+              <a href="fishingreport.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Fishing Reports</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Contact</a>
+            </li>
+            <li class="nav-item" id="ownersignin">
+              <a href="ownersignin.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Sign-in</a>
+            </li>
+            <li class="nav-item" id="ownernav-item">
+              <a href="ownerpage.html" class="ml-3 mr-3 d-flex justify-content-center fw-bold" id="navItems">Owner</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -70,10 +70,8 @@
                 <div class="col">
                     <div class="p-3">
                         <div id='text-container' style="opacity: .9;">
-                            <h1 name="editFirstHead" style="display: none" id="textHeading"><input name="firstHeadEditor" style="color: rgb(163, 22, 22); text-align: center; background-color: rgb(246, 252, 167);" type="text" value="The Trucha Fly Fishing Motto"></h1>
-                            <h1 name="firstHead" id='textHeading'>The Trucha Fly Fishing Motto</h1>
-                            <h2 name="editFirstBody" style="display: none" id="text"><input name="firstBodyEditor" style="color: rgb(11, 11, 77); text-align: center; background-color: rgb(246, 252, 167);" type="text" value="ALWAYS KEEPIN' IT REEL!"></h2>
-                            <h2 name="firstBody" class='text-middle mt-4 fw-bold' id='text'>
+                            <h1 id='textHeading'>The Trucha Fly Fishing Motto</h1>
+                            <h2 class='text-middle mt-4 fw-bold' id='text'>
                                ALWAYS KEEPIN' IT REEL!
                             </h2>
                         </div>
@@ -157,7 +155,7 @@
                                 button below to book a trip.
                             </h2>
                             <div id='inbetweenbreak'></div>
-                            <a href='./pages/bookatrip.html'><button class='bookButton' style="color: white;">Book A Trip</button></a>
+                            <a href='bookatrip.html'><button class='bookButton' style="color: white;">Book A Trip</button></a>
                         </div>
                     </div>
                 </div>
@@ -176,9 +174,9 @@
                             </h2>
                             <div id='inbetweenbreak'></div>
                             <div class="row">
-                                <div class="col-sm"><a href='./pages/lodging.html'><button class='bookButton' style="color: white;">Lodging</button></a></div>
-                                <div class="col-sm"><a href='./pages/fishingreport.html'><button class='bookButton' style="color: white;">Fishing Reports</button></a></div>
-                                <div class="col-sm"><a href='./pages/contact.html'><button class='bookButton' style="color: white;">Contact</button></a></div>
+                                <div class="col-sm"><a href='lodging.html'><button class='bookButton' style="color: white;">Lodging</button></a></div>
+                                <div class="col-sm"><a href="fishingreport.html'><button class='bookButton' style="color: white;">Fishing Reports</button></a></div>
+                                <div class="col-sm"><a href='contact.html'><button class='bookButton' style="color: white;">Contact</button></a></div>
                             </div>
                         </div>
                     </div>
@@ -210,18 +208,18 @@
       <footer class='bg-success mb-0' id='foot'>
         <div class='d-flex justify-content-center pt-4 pb-2' id='containerfooter'>
             <a href="index.html" id='footerText' class='ms-5 me-5'>Home</a>
-            <a href='./pages/bookatrip.html' id='footerText' class='ms-4 me-4'>Book Trip</a>
-            <a href="./pages/lodging.html" id='footerText' class='ms-5 me-5'>Lodging</a>
-            <a href='./pages/fishingreport.html' id='footerText' class='ms-4 me-4'>Fishing Reports</a>
-            <a href="./pages/contact.html" id='footerText' class='ms-5 me-5'>Contact</a>
+            <a href='bookatrip.html' id='footerText' class='ms-4 me-4'>Book Trip</a>
+            <a href="lodging.html" id='footerText' class='ms-5 me-5'>Lodging</a>
+            <a href='fishingreport.html' id='footerText' class='ms-4 me-4'>Fishing Reports</a>
+            <a href="contact.html" id='footerText' class='ms-5 me-5'>Contact</a>
         </div>
         <div class='d-flex justify-content-center pb-3'>
             <h1 id='footerTextCopy'>&copy; Trucha Fly Fishing Guide Service</h1>
         </div>
     </footer>
 
-    <script src="./js/slideshow.js" type="module"></script>
-    <script src="./js/indexOwner.js" type="module"></script>
+    <script src="../js/slideshow.js" type="module"></script>
+    <script src="../js/indexOwner.js" type="module"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
