@@ -1,10 +1,12 @@
-body {
-    background-image: url("../images/Pic3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.bgImg {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    background-position-x: 50%;
     height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media screen and (min-width:601px) {
@@ -200,6 +202,13 @@ body {
     background-image: url('../images/woodBorder.jpg');
     border-radius: 10px;
     opacity: .9;
+}
+
+@media screen and (min-width:601px) {
+    #grid-container {
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
 #text-container {
