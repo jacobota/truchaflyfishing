@@ -135,6 +135,39 @@
     font-size: 1.75rem;
 }
 
+.contact-link {
+    color: rgb(11, 11, 77) !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 1.75rem;
+}
+
+.social-link {
+    color: rgb(11, 11, 77) !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+.insta-link {
+    color: rgb(240, 43, 135) !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+#footerTitle {
+    margin-top: 20px;
+    color: rgb(11, 11, 77) !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 1.75rem;
+}
+
 @media screen and (min-width:650px) {
     #footerText {
         margin: 15px;
@@ -148,12 +181,12 @@
 }
 
 #footerTextCopy {
-    color: rgb(163, 22, 22) !important;
+    color: rgb(11, 11, 77) !important;
     font-weight: bold;
     margin: 15px;
     text-decoration: none;
     font-family: 'Lobster', cursive;
-    font-size: 2.0rem;
+    font-size: 1.25rem;
 }
 
 #containerfooter>#footerText:hover {
